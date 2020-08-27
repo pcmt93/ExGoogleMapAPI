@@ -89,7 +89,7 @@ def ListJson(place):
 
 # Parameters:
 
-MyKey = 'AIzaSyCkLRgHTfxHx1AvlSUxvXPs8vFtRsJSmVo' ## API key created 08/08/19
+MyKey = '' ## API key created 08/08/19
 
 Types = 'local_government_office' # only supported types, missing if you want to 
     # get all the types 

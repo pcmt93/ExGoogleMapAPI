@@ -22,7 +22,7 @@ import geopandas as gpd
 from shapely.geometry import Point, LineString
 import matplotlib.pyplot as plt
 
-api_key = 'AIzaSyCkLRgHTfxHx1AvlSUxvXPs8vFtRsJSmVo' # your API key
+api_key = '' # your API key
 
 gmaps = googlemaps.Client(api_key)
 
