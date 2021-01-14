@@ -5,6 +5,9 @@ Created on Wed Aug 29 19:02:46 2018
 
 Modified: Jan11/2020
 
+Comment: Everything works fine, the only thing left is to correct
+the log file that appears in the command window
+
 @author: paulomatos
 """
 
@@ -49,11 +52,11 @@ BACKOFF_TIME = 30 # because now there is no limit per day, just per second
 
 # Output filename here 
 
-output_filename = 'prueba_output.xlsx'
+output_filename = 'address_geocoded.xlsx'
 
 # Input filename 
 
-input_filename = 'prueba.xlsx'
+input_filename = 'input_togeo.xlsx'
 
 # Column name that contains address
 
@@ -211,7 +214,7 @@ for ind in df.index:
     # Every 500 addresses, save progress to file (just in case :) )
     
     if len(results) % 500 == 0:
-        pd.DataFrame(results).to_csv("{}_bak".format(output_filename))
+        pd.DataFrame(results).to_excel("back_" + output_filename)
         
 # All done 
 
